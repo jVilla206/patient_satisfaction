@@ -10,6 +10,10 @@ Huge shoutout to Joshua Matlock (Datawizardry) for helping guide this project.
    
 This is a breakdown of how I looked at patient survey data from Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS) to see how satisifed patients were with their hospital stay. Also, I wanted to see how well hospitals were doing in comparisons to one another.
 
+The tools I will be using for this project include:
+* **SQL (PostgreSQL)**
+* **Tableau**
+
 # Data Cleaning
 **Problem 1:**
 * Each hospital has a unique CMS Identification Number (Provider CCN) to identify each specific hospital. These values consist of 6 digits in total. However, looking at the data I saw that excel cut off the leading 0 making it seem like some of the Proivder CCN's only had 5 integers. We want to keep the leading the 0 in there.
