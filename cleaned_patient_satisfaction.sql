@@ -1,4 +1,4 @@
---select * from "postgres"."Hospital_Data".hcahps_data
+select * from "postgres"."Hospital_Data".hcahps_data
 
 -- Created a common table expression (CTE)
 with hospital_beds_prep as
