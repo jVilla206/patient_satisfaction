@@ -1,5 +1,5 @@
 # Overview
-Huge shoutout to Joshua Matlock (Datawizardry) for helping guide this project
+Huge shoutout to Joshua Matlock (Datawizardry) for helping guide this project.
 
 * Data set origins: **Centers for Medicare and Medicaid Services (CMS)**
 * Data set: **Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS)**
