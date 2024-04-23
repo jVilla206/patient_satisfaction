@@ -5,9 +5,10 @@ Huge shoutout to Joshua Matlock (Datawizardry) for helping guide this project.
 * Data set: **Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS)**
 **Preface:**
   * The U.S. government requires hospitals to collect this data in the form of surveys given to their patients.
-  * Hospitals are incentivized in a program called value based purchasing.
+  * Hospitals are incentivized in a program called value based purchasing. The hospital value based purchasing program (HVBP) means that hospital payments are adjusted based on the quality of care they provide each fiscal year.
+    * Hospital care is evaulated against measures in four domains. We will look specifically at the last domain (person & community engagement) which has 8 measures. We want to look at how satisfied are patients with the hospital and the npatients who gave their hospital a "top box" answer aka a 9 or 10 on their HCAHPS survey.
    
-This is a breakdown of how I looked at patient survey data from Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS) to see how satisifed patients were with their hospital stay.
+This is a breakdown of how I looked at patient survey data from Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS) to see how satisifed patients were with their hospital stay. Also, I wanted to see how well hospitals were doing in comparisons to one another.
 
 # Data Cleaning
 **Problem 1:**
