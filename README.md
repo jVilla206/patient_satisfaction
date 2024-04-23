@@ -1,4 +1,4 @@
-![image](https://github.com/jVilla206/patient_satisfaction/assets/113951737/6aab4200-f9cc-4236-8a8b-55077063377e)# Overview
+# Overview
 Huge shoutout to Joshua Matlock (Datawizardry) for helping guide this project
 
 * Data set origins: **Centers for Medicare and Medicaid Services (CMS)**
