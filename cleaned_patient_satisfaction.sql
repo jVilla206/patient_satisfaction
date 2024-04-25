@@ -43,8 +43,9 @@ from "postgres"."Hospital_Data".hcahps_data as hcahps
 left join hospital_beds_prep as beds
   on lpad(cast(facility_id as text), 6, '0') = beds.provider_ccn
  and beds.nth_row = 1
- 
- 
+
+
+-- Used the create table function to export to Tableau
 create table "postgres"."Hospital_Data".Tableau_File as
 with hospital_beds_prep as
 (
