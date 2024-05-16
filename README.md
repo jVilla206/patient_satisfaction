@@ -22,7 +22,9 @@ The tools I will be using for this project include:
    * lpad()
    * cast()
 The lpad() function will not work on integer-based columns, so we need to convert the data type from integers to text string. We can achieve this using the cast() function.
-- lpad(cast(facility_id as text), 6, '0') as provider_ccn
+````sql
+lpad(cast(facility_id as text), 6, '0') as provider_ccn
+````
 
 **Problem 2: Sometimes the hospitals will have multiple dates listed to account for the different times at which they reported out the number of beds that their hospital has.**
 
@@ -33,8 +35,9 @@ The lpad() function will not work on integer-based columns, so we need to conver
  Created a common table expression (CTE)
 
  partitioning statement:
-
- * row_number()
+````sql
+row_number()
+````
 
 * To categorize the size of hospitals, I decided to count the number of in-patient hospital beds to label them as either 'small', 'medium', or 'large' scale hospitals. Categorizing hospitals into different sizes will allow us to put peer comparison groups where we can evaluate... things such as medium hospitals vs. other medium hospitals in a specific state.
 
@@ -44,11 +47,13 @@ The lpad() function will not work on integer-based columns, so we need to conver
  
 * I will be using the to_date() function to convert the data to the preferred format
 
-* to_date
+````sql
+to_date()
+````
 
 **Export:**
 * After I prepped and cleaned the data from PostgresSQL, I wanted to export only the relevant and now clean data for use in Tableau. Using the create table statement I was able to export the file back to .csv
-  * Create table "postgres"."Hospital_Data".Tableau_File as
+  * ````Create table "postgres"."Hospital_Data".Tableau_File```` as
   ...
 
 
