@@ -39,7 +39,7 @@ lpad(cast(facility_id as text), 6, '0') as provider_ccn
 row_number() over (partition by provider_ccn order by to_date(fiscal_year_end_date, 'MM/DD/YYYY') desc) as nth_row
 ````
 
-* To categorize the size of hospitals, I decided to count the number of in-patient hospital beds to label them as either 'small', 'medium', or 'large' scale hospitals. Categorizing hospitals into different sizes will allow us to put peer comparison groups where we can evaluate... things such as medium hospitals vs. other medium hospitals in a specific state.
+* To categorize the size of hospitals, I decided to count the number of in-patient hospital beds to label them as either 'small', 'medium', or 'large' scale hospitals. Categorizing hospitals into different sizes will allow us to put peer comparison groups where we can evaluate things such as medium hospitals vs. other medium hospitals in a specific state.
 
 
 **Problem 3: Dates are not formatted in a very good way**
@@ -54,9 +54,17 @@ to_date(end_date, 'MM/DD/YYYY') as end_date_converted
 
 **Export:**
 * After I prepped and cleaned the data from PostgresSQL, I wanted to export only the relevant and now clean data for use in Tableau. Using the create table statement I was able to export the file back to .csv
-  * ````Create table "postgres"."Hospital_Data".Tableau_File```` as
-  ...
+  * ````Create table "postgres"."Hospital_Data".Tableau_File````
 
 
 # Data Visualization
-To see the data visualization in Tableau <https://public.tableau.com/app/profile/jvilla/viz/PatientSatisfactioninHospitals/HCAHPSDashboard>
+Uploaded exported .csv file to Tableau.
+Created visuals with information regarding:
+* % of patients rating the hospital 9-10 out of 10 (Top Box answer)
+* Survey response rate
+* # of completed surveys
+* Question delta (change) from mean cohort % (depending on hospital size and state)
+* Cohort hospital delta spread for each question from the HCAHPS survey to indicate relative performance
+* Also added a custom views to stratify by "State" and "Hospital Size".
+
+To see the final data visualization in Tableau <https://public.tableau.com/app/profile/jvilla/viz/PatientSatisfactioninHospitals/HCAHPSDashboard>
