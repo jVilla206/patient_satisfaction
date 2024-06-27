@@ -48,7 +48,8 @@ row_number()
 * I will be using the to_date() function to convert the data to the preferred format
 
 ````sql
-to_date()
+to_date(start_date, 'MM/DD/YYYY') as start_date_converted
+to_date(end_date, 'MM/DD/YYYY') as end_date_converted
 ````
 
 **Export:**
