@@ -36,7 +36,7 @@ lpad(cast(facility_id as text), 6, '0') as provider_ccn
 
  partitioning statement:
 ````sql
-row_number()
+row_number() over (partition by provider_ccn order by to_date(fiscal_year_end_date, 'MM/DD/YYYY') desc) as nth_row
 ````
 
 * To categorize the size of hospitals, I decided to count the number of in-patient hospital beds to label them as either 'small', 'medium', or 'large' scale hospitals. Categorizing hospitals into different sizes will allow us to put peer comparison groups where we can evaluate... things such as medium hospitals vs. other medium hospitals in a specific state.
