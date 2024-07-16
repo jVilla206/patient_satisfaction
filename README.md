@@ -1,5 +1,5 @@
 # Overview
-To see the final data visualization in Tableau <https://public.tableau.com/app/profile/jvilla/viz/PatientSatisfactioninHospitals/HCAHPSDashboard>
+To see the final outcome in Tableau [click here!](<https://public.tableau.com/app/profile/jvilla/viz/PatientSatisfactioninHospitals/HCAHPSDashboard>)
 
 Huge shoutout to Joshua Matlock (Datawizardry) for helping guide this project.
 
