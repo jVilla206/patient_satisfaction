@@ -1,4 +1,6 @@
 # Overview
+To see the final data visualization in Tableau <https://public.tableau.com/app/profile/jvilla/viz/PatientSatisfactioninHospitals/HCAHPSDashboard>
+
 Huge shoutout to Joshua Matlock (Datawizardry) for helping guide this project.
 
 * Data set origins: **Centers for Medicare and Medicaid Services (CMS)**
@@ -67,4 +69,4 @@ Created visuals with information regarding:
 * Cohort hospital delta spread for each question from the HCAHPS survey to indicate relative performance
 * Also added a custom views to stratify by "State" and "Hospital Size".
 
-To see the final data visualization in Tableau <https://public.tableau.com/app/profile/jvilla/viz/PatientSatisfactioninHospitals/HCAHPSDashboard>
+
