@@ -62,9 +62,9 @@ to_date(end_date, 'MM/DD/YYYY') as end_date_converted
 # Data Visualization
 Uploaded exported .csv file to Tableau.
 Created visuals with information regarding:
-* % of patients rating the hospital 9-10 out of 10 (Top Box answer)
+* Percent of patients rating the hospital 9-10 out of 10 (Top Box answer)
 * Survey response rate
-* # of completed surveys
+* Number of completed surveys
 * Question delta (change) from mean cohort % (depending on hospital size and state)
 * Cohort hospital delta spread for each question from the HCAHPS survey to indicate relative performance
 * Also added a custom views to stratify by "State" and "Hospital Size".
